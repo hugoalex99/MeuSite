@@ -1,0 +1,56 @@
+body{
+    background-image: linear-gradient(135deg, #000000, #000000); /*Cor da pagina linear gradiente função que permite a união de 2 cores*/
+    height: 100vh; /*vh view port 100% da pagina*/
+}
+#fotoprojeto{
+    background-image: url("assets/photos/Perfil\ 02.png");/*classe da imagem e url endereço da imagem via css*/
+    height: 255px; /*altura da imagem*/
+    width: 255px; /*largura da imagem*/
+    background-size: cover; /*coloca a foto fiel no background funçao cover encaixando a foto*/
+    background-position: center; /*encaixa a foto no centro*/
+    border-radius: 50%; /*foto arredondada e borda arredonda e tirando 50% de cada ponta*/
+}
+h1{ /*texto*/
+    color: white; /*cor do texto*/
+    font-family: "Open Sans", serif; /*Fonte do texto baixada do google fonts*/
+    font-size: 1.5rem; /*tamando da letra, melhor na medida rem que adapta em acessibilidade do site 1rem tem 16px*/
+    font-weight: 700; /*preenchimento da letra, tipo contorno*/
+    margin: 30px 0px 27px 0px; /*margem que é a distancia da imagem e dos botões*/
+}
+.buttonSocial{
+    display: block; /*ocupa o espaço em bloco, ocupa a linha inteira*/
+    border-radius: 50px; /*borda arredondada*/
+    height: 40px; /*altura do botão*/
+    width: 297px; /*largura*/
+    background-color: #dac721; /*cor do background e os 2 ultimos numero a transparencia*/
+    color: #000000; /*cor das letras*/
+    font-weight: 500; /*tamanho da letra na largura*/
+    margin-bottom: 20px; /*espaçamento entre os botões*/
+    position: relative; /*posição dos botoes na tela*/
+    cursor: pointer; /*quando o cursor passa nos botões aparece a mãozinha*/
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    img{
+        position: absolute; /*icone dentro do botão*/
+        height: 24px; /*altura*/
+        left: 55px;  /*espaçamento da esquerda*/
+        top: 9px; /*espaçamento do topo*/
+    }
+    p{
+        position: absolute; /*posição das letras*/
+        left: 80px;  /*posição da esquerda*/
+        top: 12px;  /*posição do topo*/
+        font-size: 1.125rem; /*tamanho da fonte me rem por questões de acessibilidade*/
+        line-height: 1.125rem; /**/
+    }
+}
+.instaButton{
+    background-color: #00000095;
+}
+#content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
